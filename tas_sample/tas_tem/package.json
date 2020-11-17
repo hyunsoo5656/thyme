@@ -1,0 +1,22 @@
+{
+  "name": "tas",
+  "version": "0.0.2",
+  "dependencies": {
+    "fs": "0.0.2",
+    "js2xmlparser": "^1.0.0",
+    "net": "^1.0.2",
+    "serialport": "^9.0.2",
+    "shelljs": "^0.8.4",
+    "shortid": "^2.2.16",
+    "xml2js": "^0.4.23",
+    "yarn": "^1.22.10"
+  },
+  "description": "tas of &Cube",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Il Yeup Ahn, KETI",
+  "license": "ISC"
+}

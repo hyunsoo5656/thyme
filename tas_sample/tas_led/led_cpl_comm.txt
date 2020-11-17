@@ -1,0 +1,3 @@
+gcc led.cpp -o led -lwiringPi
+
+gcc led.cpp -o led
