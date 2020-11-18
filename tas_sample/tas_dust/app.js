@@ -91,7 +91,7 @@ function timer_upload_action() {
         // command output is in stdout
         if (tas_state == 'upload') {
             var con = { value: a };
-            for (var i = 0; i < upload_arr.length; i++i) {
+            for (var i = 0; i < upload_arr.length; i++) {
                 if (upload_arr[i].id == 'timer') {
                     var cin = { ctname: upload_arr[i].ctname, con: con };
                     console.log(JSON.stringify(cin) + ' ---->');

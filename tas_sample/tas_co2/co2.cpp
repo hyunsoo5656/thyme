@@ -7,27 +7,6 @@
 #define		DOpin	0
 #define		Buzz	1
 
-void Print(int x)
-{
-	switch(x)
-	{
-		case 1:
-			printf("\n*********\n"  );
-			printf(  "* Saft~ *\n"  );
-			printf(  "*********\n\n");
-		break;
-		case 0:
-			printf("\n***************\n"  );
-			printf(  "* Danger Gas! *\n"  );
-			printf(  "***************\n\n");
-		break;
-		default:
-			printf("\n**********************\n"  );
-			printf(  "* Print value error. *\n"  );
-			printf(  "**********************\n\n");
-		break;
-	}
-}
 
 int main()
 {
@@ -47,11 +26,11 @@ int main()
 
 	status = 0;
 	count = 0;
-	while(1) // loop forever
-	{
+	 // loop forever
+	
 		analogVal = analogRead(PCF + 0);
 		printf("%d\n", analogVal);
-
+		break;
 		tmp = digitalRead(DOpin);
 
 		if (tmp != status)
@@ -74,6 +53,6 @@ int main()
 			digitalWrite(Buzz, HIGH);
 		}
 		delay (200);
-	}
+	
 	return 0;
 }

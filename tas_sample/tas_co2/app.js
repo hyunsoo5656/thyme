@@ -84,13 +84,15 @@ function timer_upload_action() {
     var cmd = './co2';
     shell.exec(cmd, function (error, stdout, stderr) {
 
-        var co2 = stdout.split('\n');
+        var co2 = stdout.split('  ');
 
-        var a = co2[0]
+        var a =  co2[0]
+        
+        
         // console.log("fhhefhwo" + mise)
         // command output is in stdout
         if (tas_state == 'upload') {
-            var con = { value: a };
+            var con ={ value: a };
             for (var i = 0; i < upload_arr.length; i++) {
                 if (upload_arr[i].id == 'timer') {
                     var cin = { ctname: upload_arr[i].ctname, con: con };

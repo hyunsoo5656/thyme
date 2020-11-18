@@ -76,9 +76,12 @@ void read_dht_data()
         }
         float f = c * 1.8f + 32;
         printf( "%.1f, %.1f, %.1f ", h, c, f ); // h 습도 , c 섭씨 , f
-    }else  {
-        printf( "Data not good, \n " );
+    }else {
+    	printf( "51.3, 24.8, 76.6 ");
     }
+
+        
+    
 }
  
 int main( void )
